@@ -1,0 +1,674 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Bhansali | Developer & AI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.10.0/build/player/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button"></div>
+                </div>
+                <div class="terminal-body">
+                    <div id="loading-text"></div>
+                    <div class="blinking-cursor">█</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MB</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section section-home">
+            <div id="particles-js" class="particles-js"></div>
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="name glitch" data-text="Manan Bhansali">Manan Bhansali</h1>
+                    <div class="title-container">
+                        <h2 class="title">Full Stack Developer & AI Engineer</h2>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="cta-button primary">View Projects</a>
+                        <a href="#contact" class="cta-button secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="home-visual">
+                    <div class="lottie-container" data-animation-path="https://assets5.lottiefiles.com/packages/lf20_UJNc2t.json"></div>
+                    <canvas id="matrix-canvas"></canvas>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll Down</span>
+            </div>
+            <div class="home-shape-1"></div>
+            <div class="home-shape-2"></div>
+        </section>
+
+        <section id="about" class="section section-about">
+            <div class="section-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-container">
+                    <div class="about-visual">
+                        <div class="skill-sphere-container">
+                            <canvas id="skills-sphere"></canvas>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <div class="highlight-box">
+                            <div class="svg-container">
+                                <svg class="animated-icon" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#BB86FC" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251">
+                                        <animate attributeName="stroke-dashoffset" from="251" to="0" dur="2s" fill="freeze" />
+                                    </circle>
+                                    <path d="M35,50 L45,60 L65,40" fill="none" stroke="#03DAC6" stroke-width="3" stroke-dasharray="50" stroke-dashoffset="50">
+                                        <animate attributeName="stroke-dashoffset" from="50" to="0" dur="1s" begin="1.5s" fill="freeze" />
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3>Highlights</h3>
+                            <p><span class="highlight">✨ Developed 21+ production-grade apps</span> in a 3-week "App-a-Day" challenge</p>
+                        </div>
+                        
+                        <div class="skills-container">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-categories">
+                                <div class="skill-category">
+                                    <h4>Languages</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">C</span>
+                                        <span class="skill-tag">Dart</span>
+                                        <span class="skill-tag">Kotlin</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Frameworks</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Flutter</span>
+                                        <span class="skill-tag">Android Studio</span>
+                                        <span class="skill-tag">TensorFlow</span>
+                                        <span class="skill-tag">Django</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Specialties</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">AI/ML</span>
+                                        <span class="skill-tag">Ethical Hacking</span>
+                                        <span class="skill-tag">Web Scraping</span>
+                                        <span class="skill-tag">Automation</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Tools</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Cloudflare Workers</span>
+                                        <span class="skill-tag">Supabase</span>
+                                        <span class="skill-tag">Firebase</span>
+                                        <span class="skill-tag">AWS Lambda</span>
+                                        <span class="skill-tag">Azure</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91-9558605393</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="593b3138372a38353034383738376c6c193e34383035773a3634">[email&#160;protected]</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://linkedin.com/in/manan-bhansali" target="_blank">linkedin.com/in/manan-bhansali</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/seemmttai" target="_blank">github.com/seemmttai</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-projects">
+            <div class="section-content">
+                <h2 class="section-title">Key Projects</h2>
+                
+                <div class="project-cards">
+                    <div class="project-card" data-project="fake-news">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <h3>Fake News Detector AI</h3>
+                                <p>Advanced ML model with 99.79% accuracy on test set</p>
+                                <div class="card-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <h3>Fake News Detector AI</h3>
+                                <ul>
+                                    <li>Achieved 99.79% accuracy on test set (IIT BHU Hackathon 2024)</li>
+                                    <li>Model metrics: Precision 0.9982, Recall 0.9975, F1-score 0.9979</li>
+                                </ul>
+                                <div class="project-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">99.79%</span>
+                                        <span class="metric-label">Accuracy</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">0.9982</span>
+                                        <span class="metric-label">Precision</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">0.9979</span>
+                                        <span class="metric-label">F1-score</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="security">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>AI Security Ecosystem</h3>
+                                <p>Advanced threat detection using LLMs</p>
+                                <div class="card-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <h3>AI Security Ecosystem</h3>
+                                <ul>
+                                    <li><strong>Vulnerability Scanner:</strong> Detects OWASP Top 10 threats via LLMs (5s analysis)</li>
+                                    <li><strong>Cloudflare API System:</strong> Secure authentication with unique per-user encryption keys</li>
+                                </ul>
+                                <a href="https://urlingest.pages.dev/vulnerability-scanner" class="demo-link" target="_blank">View Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="novel-engine">
+                        <div class="project-card-inner">
+                            <div class="project-front">
+                                <div class="project-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3>Dynamic Visual Novel Engine</h3>
+                                <p>LLM-powered interactive storytelling</p>
+                                <div class="card-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="project-back">
+                                <h3>Dynamic Visual Novel Engine</h3>
+                                <p>Uses large context LLMs with clever prompting and control over special effects, with flux for image generation</p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">LLMs</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Image Generation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-showcase">
+                    <div class="showcase-header">
+                        <h3>Interactive Project Showcase</h3>
+                        <div class="showcase-controls">
+                            <button id="prev-project" class="showcase-control"><i class="fas fa-chevron-left"></i></button>
+                            <button id="next-project" class="showcase-control"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="showcase-container">
+                        <div class="showcase-item active" data-project="mystudentclub">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>MyStudentClub</h3>
+                                    <p>Full-stack platform scaled to 100k+ monthly users</p>
+                                    <div class="showcase-details">
+                                        <p>Led Android app development (Java/Flutter)</p>
+                                        <a href="https://mystudentclub.pages.dev" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://mystudentclub.pages.dev" frameborder="0" title="MyStudentClub Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="inkmire">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>Inkmire</h3>
+                                    <p>AI-powered portfolio builder</p>
+                                    <div class="showcase-details">
+                                        <p>Create stunning portfolios with AI assistance</p>
+                                        <a href="https://inkmire.pages.dev" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://inkmire.pages.dev" frameborder="0" title="Inkmire Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="pairscreen">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>PairScreen</h3>
+                                    <p>Real-time remote screen sharing</p>
+                                    <div class="showcase-details">
+                                        <p>Share your screen with anyone, anywhere</p>
+                                        <a href="https://pairscreen.pages.dev" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://pairscreen.pages.dev" frameborder="0" title="PairScreen Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="cv-reviewer">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>CV Reviewer</h3>
+                                    <p>Interactive CV review system using LLMs</p>
+                                    <div class="showcase-details">
+                                        <p>Provides real-time feedback and suggestions for CV improvement</p>
+                                        <a href="https://mystudentclub.com/cv-reviewer" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://mystudentclub.com/cv-reviewer" frameborder="0" title="CV Reviewer Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="proxime-browser">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>Proxime Browser</h3>
+                                    <p>CORS bypassing in-browser navigation</p>
+                                    <div class="showcase-details">
+                                        <p>Browse websites with CORS bypass directly in your browser</p>
+                                        <a href="https://urlingest.pages.dev/proxime-browser" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://urlingest.pages.dev/proxime-browser" frameborder="0" title="Proxime Browser Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="research-scraper">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>Research Paper Scraper</h3>
+                                    <p>arXiv scraper with LLM integration</p>
+                                    <div class="showcase-details">
+                                        <p>Scrapes from arXiv with LLM integration, covering 150+ topics</p>
+                                        <a href="https://urlingest.pages.dev/Research.html" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://urlingest.pages.dev/Research.html" frameborder="0" title="Research Scraper Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="vulnerability-scanner">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>Vulnerability Scanner</h3>
+                                    <p>AI-powered web security scanner</p>
+                                    <div class="showcase-details">
+                                        <p>Detects OWASP Top 10 threats via LLMs in just 5 seconds</p>
+                                        <a href="https://urlingest.pages.dev/vulnerability-scanner" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://urlingest.pages.dev/vulnerability-scanner" frameborder="0" title="Vulnerability Scanner Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="webtailor">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>WebTailor</h3>
+                                    <p>No-code website builder</p>
+                                    <div class="showcase-details">
+                                        <p>Create beautiful websites without writing a single line of code</p>
+                                        <a href="https://webtailor.pages.dev" target="_blank" class="showcase-link">Visit Website</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <iframe src="https://webtailor.pages.dev" frameborder="0" title="WebTailor Demo"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="proxime">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>Proxime API</h3>
+                                    <p>CORS bypassing API in Cloudflare Workers</p>
+                                    <div class="showcase-details">
+                                        <p>Enables cross-origin requests through Cloudflare's edge network</p>
+                                        <a href="https://proxime.bhansalimanan55.workers.dev/" target="_blank" class="showcase-link">Visit API</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <div class="code-viewer">
+                                        <div class="code-header">
+                                            <span>Example Usage</span>
+                                        </div>
+                                        <pre><code class="language-javascript">
+fetch('https://proxime.bhansalimanan55.workers.dev/https://example.com')
+  .then(response => response.text())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+                                        </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="showcase-item" data-project="c-compiler">
+                            <div class="showcase-content">
+                                <div class="showcase-info">
+                                    <h3>C Compiler API</h3>
+                                    <p>Deno-based C compiler service</p>
+                                    <div class="showcase-details">
+                                        <p>Free to use API in Deno that compiles C code and returns output</p>
+                                        <a href="https://c-compile.deno.dev/compile" target="_blank" class="showcase-link">Visit API</a>
+                                    </div>
+                                </div>
+                                <div class="showcase-demo">
+                                    <div class="compiler-demo">
+                                        <div class="code-editor">
+                                            <div class="code-header">
+                                                <span>C Code Editor</span>
+                                            </div>
+                                            <textarea id="cCode">#include <stdio.h>
+
+void main() {
+    printf("Hello from Deno Deploy!\n");
+}</textarea>
+                                        </div>
+                                        <button id="compileButton" class="compile-button">Compile & Run</button>
+                                        <div class="output-viewer">
+                                            <div class="code-header">
+                                                <span>Output</span>
+                                            </div>
+                                            <pre id="compilerOutput">Compilation output will appear here...</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-experience">
+            <div class="section-content">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Technical Lead</h3>
+                            <h4>MyStudentClub</h4>
+                            <div class="timeline-details">
+                                <p>Led the development and scaling of a platform reaching 100k+ monthly users and 10k+ active users.</p>
+                                <ul>
+                                    <li>Scaled platform to 100k+ monthly users, 10k+ active users</li>
+                                    <li>Led Android app development (Java/Flutter)</li>
+                                    <li>Developed and maintained the full-stack website</li>
+                                </ul>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Cloudflare</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>App Developer</h3>
+                            <h4>Verbatim</h4>
+                            <div class="timeline-details">
+                                <p>Created a Flutter app that records lectures and generates AI notes automatically.</p>
+                                <ul>
+                                    <li>Implemented speech-to-text functionality for lecture recording</li>
+                                    <li>Integrated AI services for note generation</li>
+                                    <li>Open-sourced the project</li>
+                                </ul>
+                                <div class="timeline-links">
+                                    <a href="https://github.com/seenmttai" target="_blank" class="timeline-link">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Dart</span>
+                                    <span class="tech-tag">AI APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Web Developer</h3>
+                            <h4>"App-a-Day" Challenge</h4>
+                            <div class="timeline-details">
+                                <p>Developed 21+ production-grade apps in a 3-week "App-a-Day" challenge.</p>
+                                <p>Notable creations include:</p>
+                                <ul>
+                                    <li>WebTailor: No-code website builder</li>
+                                    <li>Codepit: Competitive coding platform</li>
+                                    <li>Research Paper Scraper: arXiv integration with LLMs</li>
+                                    <li>Vulnerability Scanner: Security analysis tool</li>
+                                </ul>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Cloudflare</span>
+                                    <span class="tech-tag">LLMs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact">
+            <div class="section-content">
+                <h2 class="section-title">Get In Touch</h2>
+                
+                <div class="contact-container">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-container">
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <h3>Contact Information</h3>
+                            </div>
+                            <div class="contact-info-body">
+                                <div class="contact-detail">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <p>+91-9558605393</p>
+                                    </div>
+                                </div>
+                                <div class="contact-detail">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e5878d848b9684898c88848b848bd0d0a58288848c89cb868a88">[email&#160;protected]</a></p>
+                                    </div>
+                                </div>
+                                <div class="contact-detail">
+                                    <i class="fab fa-linkedin"></i>
+                                    <div>
+                                        <h4>LinkedIn</h4>
+                                        <a href="https://linkedin.com/in/manan-bhansali" target="_blank">linkedin.com/in/manan-bhansali</a>
+                                    </div>
+                                </div>
+                                <div class="contact-detail">
+                                    <i class="fab fa-github"></i>
+                                    <div>
+                                        <h4>GitHub</h4>
+                                        <a href="https://github.com/seemmttai" target="_blank">github.com/seemmttai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="interactive-element">
+                            <canvas id="contact-canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">MB</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/manan-bhansali" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/seemmttai" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="/cdn-cgi/l/email-protection#d4b6bcb5baa7b5b8bdb9b5bab5bae1e194b3b9b5bdb8fab7bbb9"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Manan Bhansali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-nav">
+        <button class="floating-nav-toggle">
+            <i class="fas fa-rocket"></i>
+        </button>
+        <div class="floating-nav-menu">
+            <a href="#home" class="floating-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="floating-nav-item">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="#projects" class="floating-nav-item">
+                <i class="fas fa-code"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#experience" class="floating-nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+            </a>
+            <a href="#contact" class="floating-nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
